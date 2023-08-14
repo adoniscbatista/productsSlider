@@ -54,7 +54,7 @@ header {
 	justify-content: center;
 }
 
-.general-container {
+.carousel-general-container {
 	display:flex;
 	flex-direction: column;
 	align-items: center;
@@ -68,17 +68,17 @@ header {
 	display: flex;
 }
 
-.slider-container {
+.carousel-container {
 	overflow: hidden;
 	width: 300px;
 }
 
-.slider {
+.carousel {
 	display: flex;
 	transition: transform 0.5s ease-in-out;
 }
 
-.slider-item {
+.carousel-item {
 	display: flex;
 	flex-direction: column;
 	flex-shrink: 0;
@@ -87,9 +87,91 @@ header {
 	justify-content: center;
 }
 
-.slider-item ul {
+.carousel-item ul {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
+}
+
+.carousel-item button {
+	background-color: #f4f4f4;
+	border: 2px solid #0e5a0bd0;
+	border-radius: 10px;
+	padding: 5px;
+	color: rgb(7, 1, 7);
+	cursor: pointer;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+.carousel-item button:hover {
+	background-color: #0e5a0bd0;
+	color: #f4f4f4;
+}
+
+.carousel-btn {
+	font-size: 24px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;	
+	display: flex;	
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #333;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	color: #ffffff
+}
+
+footer .social-icon {
+	display:flex;
+	gap: 10px;
+}
+footer a{
+	color:#ffffff;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+footer a:hover {
+	color: #7fbd97
+}
+
+@media screen and (max-width: 768px){
+	.menu {
+		display: none;
+	}
+
+	.mobile-menu-icon {
+		display: block;
+	}
+
+	.mobile-menu-open {
+		display: block;
+		position: absolute;
+		top: 50px;
+		right: 20px;
+		background-color: #f333;
+		padding: 10px;
+		border-radius: 5px;
+		z-index:2;
+	}
+
+	.mobile-menu-open ul {
+		flex-direction: column;		
+	}
+
+	.mobile-menu-open li {
+		margin-bottom: 10px;
+	}
+
+	.mobile-menu-open a {
+		color:#ffffff
+	}
 }
