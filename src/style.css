@@ -1,0 +1,95 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkgrey;
+  color: #ffff;
+  padding: 10px 20px;
+}
+
+.logo img {
+	width: 500px;
+}
+
+.menu ul {
+	list-style: none;
+	display: flex;
+	padding: 0 10px;	
+}
+
+.menu ul li {
+	margin-right: 20px;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: #ffff;
+}
+
+.menu ul li a:hover {
+	color: rgb(11, 27, 21);
+	transition: color 0.5s;
+}
+
+.mobile-menu-icon {
+	display:none;
+	font-size: 20px;
+}
+
+.products {
+	max-width: 1200px;
+	margin: 10px auto;
+	display:flex;
+	justify-content: center;
+}
+
+.general-container {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #ffffff;
+	padding: 25px;
+	height: fit-content;
+	border-radius: 20px;
+}
+
+.product {
+	display: flex;
+}
+
+.slider-container {
+	overflow: hidden;
+	width: 300px;
+}
+
+.slider {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	flex-basis: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.slider-item ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
